@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101725"><meta name="description" content="Die Wölfe sind los – ein Werwolf-Spiel für eure Runde.">
+  <title>Die Wölfe sind los</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+  <script type="importmap">{"imports":{"firebase/app":"https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js","firebase/auth":"https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js","firebase/database":"https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js"}}</script>
+</head>
+<body>
+  <div class="sky" aria-hidden="true"><div class="moon"></div><div class="wolf-mark">◢</div><div class="fog fog-a"></div><div class="fog fog-b"></div></div>
+  <header class="topbar"><a class="brand" href="#">☾ <span>Die Wölfe sind los</span></a><div class="header-actions"><button class="icon-btn" id="soundBtn" aria-label="Ton umschalten">♫</button><button class="button ghost small" data-action="rules">Spielregeln</button></div></header>
+  <main id="app" class="shell" aria-live="polite"><section class="panel loading"><p class="eyebrow">Ein Spiel für eure Runde</p><h1>Der Wald erwacht…</h1><p>Verbindung wird hergestellt.</p></section></main>
+  <dialog id="rulesDialog" class="modal"><form method="dialog"><button class="close" aria-label="Schließen">×</button><p class="eyebrow">Spielregeln</p><h2>So spielt ihr</h2><div id="rulesContent" class="rules-copy"></div><button class="button primary">Verstanden</button></form></dialog>
+  <div id="toast" class="toast" role="status"></div>
+  <script type="module" src="app.js"></script>
+</body></html>
