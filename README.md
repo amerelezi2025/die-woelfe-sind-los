@@ -18,6 +18,8 @@ This is a friends-only game, not a cheat-proof game. The host's browser is the g
 
 ## 2. Publish on GitHub Pages
 
+For this repository, Pages is already configured to deploy from `main` and `/ (root)`. The site URL is <https://amerelezi2025.github.io/die-woelfe-sind-los/>. GitHub may take a few minutes to finish the first build. The setup screen remains until you complete the Firebase steps above.
+
 1. Create a new **public** GitHub repository named `die-woelfe-sind-los` (or another name you prefer).
 2. Upload all files from this folder, including `index.html`, `app.js`, `game-logic.js`, `firebase-config.js`, `style.css`, `database.rules.json`, `README.md`, `package.json`, and `tests/`.
 3. In the repository, open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
